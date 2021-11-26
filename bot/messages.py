@@ -27,7 +27,7 @@ FULL_GRAPH = discord.Embed(
 )
 
 WORD_CLOUD_GRAPH = discord.Embed(
-    title = "☝️\nHere's your words cloud!",
+    title = "☝️\nHere's your words cloud check this test!",
     colour = COLOR,
     description = f'Words size is proportional to {k.WORD_CLOUD_SIZE}'
 )
