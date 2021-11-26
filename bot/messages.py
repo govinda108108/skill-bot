@@ -4,8 +4,8 @@ import discord
 from constants import Strings as k
 
 COLOR = discord.Colour.magenta()
-MAP_MESSAGE = "⚔\nBehold your growing arsenal"
-WORD_CLOUD_MESSAGE = "Many words may be used to describe our guild's prowess... here are some of them"
+MAP_MESSAGE = "⚔\nBehold the skills of our guild!"
+WORD_CLOUD_MESSAGE = "Word size is proportional to number of raiders..."
 
 HELLO = discord.Embed(
     title = k.HELLO_TITLE,
@@ -52,7 +52,7 @@ def new_skill_message(skill_name):
         title = f'{k.SKILL_ICON} {skill_name} {k.SKILL_ICON}',
         colour = COLOR,
         description = f'''
-            Our guild has new {k.ENTITY_SHORT} created! I have added it to our growing arsenal.
+            Our guild has new {k.ENTITY_SHORT}!.
 
             **React with {k.REACTION} to this message if you {k.REACTION_REASON}**
         '''
@@ -139,7 +139,7 @@ def skills_subgraph_message(skills_terms: Iterable[str]):
 
 def stats_message(people_count: int, skills_count: int, people_skills_count: int):
     embed = discord.Embed(
-        title = f"{k.MECHANICAL_ARM_EMOJI_CODE} \nSee how mighty our Guild is! Death to moloch!",
+        title = f"{k.MECHANICAL_ARM_EMOJI_CODE} \nSee how mighty our Guild is! Death to Moloch!",
         colour = COLOR,
         description = f'''
             👤 {k.PEOPLE_UPPERCASE}: {people_count}
