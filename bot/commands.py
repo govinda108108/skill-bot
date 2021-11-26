@@ -60,7 +60,7 @@ class AddSkillCommand(AbstractCommand):
         skill_name = re.sub(r'\W+', '_', args)[0:-1]
         skill_emoji = re.findall(k.EMOJI_REGEX, args)
         if len(skill_emoji) != 1:
-            raise Exception(f'!sb new requires a single emoji after your skill name is supported; instead received: {skill_emoji}')
+            raise Exception(f'Please enter a single emoji after your skill name, for example: "Python :snake:"')
         print(f'🐛 skill_name: {skill_name}, skill_emoji {skill_emoji}')
         if not AddSkillCommand._skill_re.match(skill_name):
             raise Exception(f'Invalid {k.ENTITY_SHORT} name :shrug:')
