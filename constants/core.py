@@ -79,6 +79,7 @@ def apply_raidguild_customization():
     print(f'Applying customization: ⚔️ RaidGuild')
     Strings.DESCRIPTION = f'''
         After countless raids and demons slain, the Guild has appointed me as the Quartermaster.
+        
         My is to job help you find fellow Guild members based on their skills and abilities.
         {Strings.RG_WARRIOR_EMOJI_CODE} {Strings.RG_ALCHEMIST_EMOJI_CODE} {Strings.RG_ARCHER_EMOJI_CODE} {Strings.RG_MONK_EMOJI_CODE} {Strings.RG_TAVERN_EMOJI_CODE}
     '''
@@ -90,7 +91,7 @@ def apply_raidguild_customization():
     Strings.ENTITIES_LONG = 'skills and abilities'
     Strings.ENTITIES_LONG_UPPERCASE = "Skills and Abilities"
     Strings.ENTITY_SHORT = 'skills/abilities'
-    Strings.HELLO_TITLE = f'{Strings.RG_WARRIOR_EMOJI_CODE}**Good day adventurer! Welcome to the Skill Hall!** {Strings.JAPANESE_CASTLE_EMOJI_CODE}'
+    Strings.HELLO_TITLE = f'{Strings.RG_WARRIOR_EMOJI_CODE}** Good day adventurer! Welcome to the Skill Hall!** {Strings.JAPANESE_CASTLE_EMOJI_CODE}'
     Strings.INFO_MESSAGE = Strings.DESCRIPTION + '''
 
         I am known by the name Quartermaster and I am here to help you find Guild members based on their skills to help you recruit and form parties.
